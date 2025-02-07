@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header class = "container">
+        <nav class="navbar">
+            <h1>TechSpot</h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="LoginWebpage.html">Account</a></li>
+            </ul>
+        </nav>   
+	</header>
+	
+	<main>
+		<div class="form">
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+            <h2>Log In</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-container" id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="signup-name">Name</label>
+                    <input type="text" id="signup-name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+    </div>
+
+   	<script src="login.js"></script>
+	</main>
+	
+	<footer>
+		<div class = "footer-content">
+		 <div class = "site-links">
+		<h3>Site Links</h3>
+		<hr>
+		<ul>
+			<li><a href = "LoginWebpage.html">Account</a></li>
+			<li><a href = "AboutUs.html">About Us</a></li>
+			<li><a href = "blogs.html">Blogs</a></li>
+			<li><a href = "contactUs.html">Contact Us</a></li>
+			<li><a href= "index.html">Home</a></li>
+			<li><a href = "newsletters.html">Newsletters</a></li>
+		</ul>
+		</div>
+		
+		<div class = "media-links">
+			<h3>Social Media</h3>
+			<hr>
+				<ul class = "media">
+				<li><a href =#>Instagram</a></li>
+				<li><a href = #>Facebook</a></li>
+				<li><a href =#>TikTok</a></li>
+				<li><a href =#>Twitter</a></li>
+			</ul>
+		</div>
+		
+		<div class = "location">
+			<h3>Location</h3>
+			<hr>
+			<p>Suite 210, 18th Street, New York, NY, USA</p>
+		</div>
+	</div>
+	
+	<p class = "copyright">&copy 2025 TechSpot | Created by Mara Ramshaw</p>
+	
+	</footer>
+	
+	
+</body>
+</html>
