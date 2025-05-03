@@ -248,7 +248,10 @@ p {
 /* About Section */
 .about {
   background-color: var(--bg-light);
-  position: relative;
+  background-image: url("images/computer.png");
+  background-position: center;
+  background-size: 100px;
+  background-repeat: repeat;
 }
 
 .about-content {
@@ -345,7 +348,7 @@ p {
 /* Newsletter Section */
 .newsletter {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: var(--text-light);
+  /*color: var(--text-light);*/
   padding: 4rem 0;
   text-align: center;
 }
@@ -359,7 +362,9 @@ p {
   margin-bottom: 1rem;
   color: white;
 }
-
+.newsletter .newsletter-title {
+  color: white !important;
+}
 .newsletter-description {
   margin-bottom: 2rem;
 }
