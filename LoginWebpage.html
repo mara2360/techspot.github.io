@@ -3,103 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Account - TechSpot</title>
+    <link rel="stylesheet" href="login-style-improved.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<header class = "container">
-        <nav class="navbar">
-            <h1>TechSpot</h1>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="LoginWebpage.html">Account</a></li>
-            </ul>
-        </nav>   
-	</header>
-	
-	<main>
-		<div class="form">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Tech<span>Spot</span></a>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="AboutUs.html" class="menu-link">About Us</a></li>
+                    <li class="menu-item"><a href="blogs.html" class="menu-link">Blogs</a></li>
+                    <li class="menu-item"><a href="newsletters.html" class="menu-link">Newsletters</a></li>
+                    <li class="menu-item"><a href="LoginWebpage.html" class="menu-link">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login/Signup Section -->
+    <section class="auth-container">
         <!-- Login Form -->
-        <div class="form-container" id="login-form">
-            <h2>Log In</h2>
-            <form action="#" method="post">
-                <div class="input-group">
-                    <label for="login-email">Email</label>
-                    <input type="email" id="login-email" name="email" required>
+        <div class="auth-card" id="login-form">
+            <div class="auth-header">
+                <h2 class="auth-title">Welcome Back</h2>
+                <p class="auth-subtitle">Sign in to access your TechSpot account</p>
+            </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="login-email" class="form-label">Email Address</label>
+                    <input type="email" id="login-email" class="form-input" placeholder="Enter your email" required>
                 </div>
-                <div class="input-group">
-                    <label for="login-password">Password</label>
-                    <input type="password" id="login-password" name="password" required>
+                <div class="form-group">
+                    <label for="login-password" class="form-label">Password</label>
+                    <input type="password" id="login-password" class="form-input" placeholder="Enter your password" required>
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" class="form-button">Sign In</button>
             </form>
-            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="#" id="show-signup" class="auth-link">Sign Up</a></p>
+            </div>
         </div>
 
-        <!-- Sign Up Form -->
-        <div class="form-container" id="signup-form" style="display: none;">
-            <h2>Sign Up</h2>
-            <form action="#" method="post">
-                <div class="input-group">
-                    <label for="signup-name">Name</label>
-                    <input type="text" id="signup-name" name="name" required>
+        <!-- Signup Form -->
+        <div class="auth-card" id="signup-form" style="display: none;">
+            <div class="auth-header">
+                <h2 class="auth-title">Create Account</h2>
+                <p class="auth-subtitle">Join the TechSpot community today</p>
+            </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="signup-name" class="form-label">Full Name</label>
+                    <input type="text" id="signup-name" class="form-input" placeholder="Enter your name" required>
                 </div>
-                <div class="input-group">
-                    <label for="signup-email">Email</label>
-                    <input type="email" id="signup-email" name="email" required>
+                <div class="form-group">
+                    <label for="signup-email" class="form-label">Email Address</label>
+                    <input type="email" id="signup-email" class="form-input" placeholder="Enter your email" required>
                 </div>
-                <div class="input-group">
-                    <label for="signup-password">Password</label>
-                    <input type="password" id="signup-password" name="password" required>
+                <div class="form-group">
+                    <label for="signup-password" class="form-label">Password</label>
+                    <input type="password" id="signup-password" class="form-input" placeholder="Create a password" required>
                 </div>
-                <button type="submit">Sign Up</button>
+                <button type="submit" class="form-button">Create Account</button>
             </form>
-            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="#" id="show-login" class="auth-link">Sign In</a></p>
+            </div>
         </div>
-    </div>
+    </section>
 
-   	<script src="js/login.js"></script>
-	</main>
-	
-	<footer>
-		<div class = "footer-content">
-		 <div class = "site-links">
-		<h3>Site Links</h3>
-		<hr>
-		<ul>
-			<li><a href = "LoginWebpage.html">Account</a></li>
-			<li><a href = "AboutUs.html">About Us</a></li>
-			<li><a href = "blogs.html">Blogs</a></li>
-			<li><a href = "contactUs.html">Contact Us</a></li>
-			<li><a href= "index.html">Home</a></li>
-			<li><a href = "newsletters.html">Newsletters</a></li>
-		</ul>
-		</div>
-		
-		<div class = "media-links">
-			<h3>Social Media</h3>
-			<hr>
-				<ul class = "media">
-				<li><a href =#>Instagram</a></li>
-				<li><a href = #>Facebook</a></li>
-				<li><a href =#>TikTok</a></li>
-				<li><a href =#>Twitter</a></li>
-			</ul>
-		</div>
-		
-		<div class = "location">
-			<h3>Location</h3>
-			<hr>
-			<p>Suite 210, 18th Street, New York, NY, USA</p>
-		</div>
-	</div>
-	
-	<p class = "copyright">&copy 2025 TechSpot | Created by Mara Ramshaw</p>
-	
-	</footer>
-	
-	
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Site Links</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="AboutUs.html">About Us</a></li>
+                        <li class="footer-link"><a href="blogs.html">Blogs</a></li>
+                        <li class="footer-link"><a href="newsletters.html">Newsletters</a></li>
+                        <li class="footer-link"><a href="LoginWebpage.html">Account</a></li>
+                        <li class="footer-link"><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="footer-link"><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li class="footer-link"><a href="#"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                        <li class="footer-link"><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Suite 210, 18th Street<br>New York, NY, USA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechSpot | Created by Mara Ramshaw</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle between login and signup forms
+        document.getElementById('show-signup').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+        });
+        
+        document.getElementById('show-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+        
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const menu = document.getElementById('menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
