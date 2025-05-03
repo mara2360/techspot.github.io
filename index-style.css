@@ -48,10 +48,10 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  background-image: url("images/computer.png");
+  /*background-image: url("images/computer.png");
   background-size: 100px;
   background-repeat: repeat;
-  background-position: center;
+  background-position: center;*/
 }
 
 .section {
@@ -248,10 +248,11 @@ p {
 /* About Section */
 .about {
   background-color: var(--bg-light);
+  position: relative;
   background-image: url("images/computer.png");
-  background-position: center;
   background-size: 100px;
   background-repeat: repeat;
+  background-position: center;
 }
 
 .about-content {
