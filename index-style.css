@@ -247,9 +247,9 @@ p {
 
 /* About Section */
 .about {
-  background-color: var(--bg-light);
+  /*background-color: var(--bg-light);*/
   position: relative;
-  background-image: url("images/computer.png");
+  background-color: white;
   
   background-repeat: repeat;
   
