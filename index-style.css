@@ -148,6 +148,82 @@ h2
 }
 
 /*About*/
+.about-section {
+  background-color: #2596be;
+  padding: 60px 20px;
+  border-top: 5px solid black;
+  background-image: url("images/computer.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.about-content {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 40px;
+}
+.about-img {
+  flex: 1;
+  min-width: 300px;
+  display: none; /* Hide if you’re using it as background only */
+}
+
+.about-section .main-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+.about-section .main-title-p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-section .cta-button {
+  padding: 12px 24px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.about-section .cta-button:hover {
+  background-color: #ff4a3d;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    padding-right: 0;
+  }
+
+  .about-section {
+    background-position: center bottom;
+    background-size: cover;
+  }
+}
 .about-container
 {
 	background-color: #2596be;
