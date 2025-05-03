@@ -171,11 +171,6 @@ h2
   min-width: 300px;
   padding-right: 40px;
 }
-.about-img {
-  flex: 1;
-  min-width: 300px;
-  display: none; /* Hide if you’re using it as background only */
-}
 
 .about-section .main-title {
   color: white;
