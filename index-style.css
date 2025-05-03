@@ -48,6 +48,10 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  background-image: url("images/computer.png");
+  background-size: 100px;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .section {
@@ -75,13 +79,13 @@ img {
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
+  border: 2px solid white;
+  color: white;
 }
 
 .btn-outline:hover {
-  background-color: var(--primary);
-  color: var(--text-light);
+  background-color: white;
+  color: var(--primary);
 }
 
 /* Typography */
@@ -353,6 +357,7 @@ p {
 
 .newsletter-title {
   margin-bottom: 1rem;
+  color: white;
 }
 
 .newsletter-description {
