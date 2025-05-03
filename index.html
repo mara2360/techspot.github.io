@@ -3,144 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>TechSpot - Your Ultimate Tech Destination</title>
     <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<header class = "container">
-        <nav class="navbar">
-            <h1>TechSpot</h1>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="LoginWebpage.html">Account</a></li>
-            </ul>
-        </nav>   
-	</header>
-	
-	<main>	
-	
-	<!--Header Card-->
-		<section class="main-section">
-			<div  class = "blue-container">
-				<h1 class = "main-title">Welcome to TechSpot</h1>
-				<p class = "main-title-p">Your Ultimate Destination for Tech 
-				News, Blogs, and Community</p>
-				<br>
-				<a href="#about-section" class="cta-button">Explore Now</a>
-			</div>
-		</section>
-		
-	<!--About Card-->
-		<section class="about-section" id = "about-section">
-			<div class = "about-container">
-    			<h2 class = "main-title">About TechSpot</h2>
-    			<p class = "main-title-p">TechSpot was founded by a group of tech 
-    			enthusiasts who wanted to create a space where innovation, knowledge, 
-    			and community come together. Explore our blogs, newsletters, and social 
-    			media to stay ahead in the tech world.</p>
-    			<br>
-    			<a href="AboutUs.html" class="cta-button">Learn More</a>
-			</div>
-		</section>
-		
-	<!--Featured Card-->
-		<section class="featured-container">
-    		<h2 class = "main-title">Featured Content</h2>
-    			<div class="blog-posts">
-    			
-    	
-    			<!--Orange Square-->
-    			<div class = "orange-container1">
-        			<div class="post">
-            			<img src="images/blog1.jpg" alt="Blog 1">
-            			<h3 class = "main-title-h3">Top 10 Tech Trends of 2024</h3>
-            			<p class = "main-title-p">Discover the latest innovations shaping the future of technology.</p>
-        			
-        			<a href="blog1.html" class="cta-button">Read More</a>
-        			<br><br>
-        			</div>
-        		</div>
-        			
-        		<!--Orange Square-->
-        		<div class="post">
-        		<br><br>
-        		<div class = "orange-container2">
-            		<img src="images/blog2.webp" alt="Blog 2">
-            		<h3 class = "main-title-h3">How AI is Transforming Industries</h3>
-            		<p class = "main-title-p">Learn how artificial intelligence is revolutionizing businesses worldwide.</p>
-        		
-        		<a href="blog2.html" class="cta-button">Read More</a>
-    		</div>
-    		</div>
-    		
-    		
-    		<!--Orange Square-->
-    		<div class="post">
-        		<br><br>
-        		<div class = "orange-container3">
-            		<img src="images/slide3.png" alt="Blog 2">
-            		<h3 class = "main-title-h3">New Linux Update?</h3>
-            		<p class = "main-title-p">Discover how Linux 6.14 has expanded beyond 40 million lines.</p>
-        		
-        		<a href="blog3.html" class="cta-button">Read More</a>
-    		</div>
-    		</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Tech<span>Spot</span></a>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="AboutUs.html" class="menu-link">About Us</a></li>
+                    <li class="menu-item"><a href="blogs.html" class="menu-link">Blogs</a></li>
+                    <li class="menu-item"><a href="newsletters.html" class="menu-link">Newsletters</a></li>
+                    <li class="menu-item"><a href="LoginWebpage.html" class="menu-link">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    		
-    		<!--Subscribe Box-->
-    		<br><br>
-    		<div class="newsletter">
-       			<h3 class = "main-title-h3">Subscribe to Our Newsletter!</h3>
-        		<p class = "main-title-p">Get the latest technology news and updates delivered straight to your inbox.</p>
-        		
-        		<form class = "subscribe-btn">
-            		<input type="email" placeholder="Enter your email" required>
-            		<button type="submit">Subscribe</button>
-        		</form>
-    		</div>
-		</section>
-		
-	</main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to TechSpot</h1>
+                <p class="hero-subtitle">Your Ultimate Destination for Tech News, Blogs, and Community</p>
+                <div class="hero-buttons">
+                    <a href="#featured" class="btn">Explore Content</a>
+                    <a href="AboutUs.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<footer>
-		<div class = "footer-content">
-		 <div class = "site-links">
-		<h3>Site Links</h3>
-		<hr>
-		<ul>
-			<li><a href = "LoginWebpage.html">Account</a></li>
-			<li><a href = "AboutUs.html">About Us</a></li>
-			<li><a href = "blogs.html">Blogs</a></li>
-			<li><a href = "contactUs.html">Contact Us</a></li>
-			<li><a href= "index.html">Home</a></li>
-			<li><a href = "newsletters.html">Newsletters</a></li>
-		</ul>
-		</div>
-		
-		<div class = "media-links">
-			<h3>Social Media</h3>
-			<hr>
-				<ul class = "media">
-				<li><a href =#>Instagram</a></li>
-				<li><a href = #>Facebook</a></li>
-				<li><a href =#>TikTok</a></li>
-				<li><a href =#>Twitter</a></li>
-			</ul>
-		</div>
-		
-		<div class = "location">
-			<h3>Location</h3>
-			<hr>
-			<p>Suite 210, 18th Street, New York, NY, USA</p>
-		</div>
-	</div>
-	
-	<p class = "copyright">&copy 2025 TechSpot | Created by Mara Ramshaw</p>
-	
-	</footer>
-	
-	
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2>About TechSpot</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>TechSpot was founded by a group of tech enthusiasts who wanted to create a space where innovation, knowledge, and community come together. We're passionate about making technology accessible and engaging for everyone.</p>
+                    <p>Whether you're looking for the latest trends, in-depth analyses, or practical tips, TechSpot is here to light the way. Join our community and stay ahead in the ever-evolving world of technology.</p>
+                    <a href="AboutUs.html" class="btn">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/computer.png" alt="Technology illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="section featured" id="featured">
+        <div class="container">
+            <h2>Featured Content</h2>
+            <div class="featured-grid">
+                <!-- Featured Card 1 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/blog1.jpg" alt="Tech Trends">
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Top 10 Tech Trends of 2024</h3>
+                        <p class="featured-description">Discover the latest innovations shaping the future of technology. From AI advancements to sustainable tech solutions.</p>
+                        <a href="blog1.html" class="btn featured-link">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Featured Card 2 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/blog2.webp" alt="AI Transformation">
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">How AI is Transforming Industries</h3>
+                        <p class="featured-description">Learn how artificial intelligence is revolutionizing businesses worldwide, from healthcare to manufacturing.</p>
+                        <a href="blog2.html" class="btn featured-link">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Featured Card 3 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/slide3.png" alt="Linux Update">
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">New Linux Update?</h3>
+                        <p class="featured-description">Discover how Linux 6.14 has expanded beyond 40 million lines of code and what this means for users.</p>
+                        <a href="blog3.html" class="btn featured-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container newsletter-container">
+            <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+            <p class="newsletter-description">Get the latest technology news and updates delivered straight to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Site Links</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="AboutUs.html">About Us</a></li>
+                        <li class="footer-link"><a href="blogs.html">Blogs</a></li>
+                        <li class="footer-link"><a href="newsletters.html">Newsletters</a></li>
+                        <li class="footer-link"><a href="LoginWebpage.html">Account</a></li>
+                        <li class="footer-link"><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="footer-link"><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li class="footer-link"><a href="#"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                        <li class="footer-link"><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Suite 210, 18th Street<br>New York, NY, USA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechSpot | Created by Mara Ramshaw</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const menu = document.getElementById('menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
